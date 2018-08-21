@@ -53,5 +53,13 @@ dependencies {
 }
 
 test {
-	useJUnitPlatform()
+	useJUnitPlatform {
+		includeTags 'first'
+		excludeTags 'second'
+	}
+}
+
+
+springBoot {
+	mainClassName = "BlogApplication"
 }
